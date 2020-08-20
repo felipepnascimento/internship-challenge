@@ -1,1 +1,1 @@
-# -internship-challenge-level-1
+# Internship Challenge Level 1
