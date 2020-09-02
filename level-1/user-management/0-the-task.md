@@ -1,65 +1,72 @@
 # A Tarefa - Sistema de Gerencimento de Usuários
-- Crie um aplicativo responsivo para gerenciar usuários
-- O usuário deve ter:
+O objetivo desta tarefa é criar um sitema para gerencimento de usuários. Devemos ter dois perfis de acesso `admin` e `student` com regras e funcionalidades diferentes dentro da aplicação. O cadastro de cada usuário deverá ter os seguintes atributos:
 
-1. full_name
-2. email
-3. avatar_image (upload do arquivo)
-4. role (admin/student)
+| Nome      | Tipo    | Descrição
+|-----------|---------|-----------
+| full_name | String  | Nome completo do usuário.
+| email     | String  | email válido do usuário
+| role      | Integer | valor do enum da role do usuário
 
-##  A Aplicação
-### Casos de uso do Admin
-- Como `admin`, devo ser capaz de acessar um painel de administração do usuário, o **Dashboard**
-- Como `admin`, devo ser capaz de ver no Dashboard:
-   - Número total de usuários
-   - Número total de usuários agrupados por `role`
-- Como `admin`, devo ser redirecionado para o Dashboard após o login
-- Como `admin`, devo ser capaz de listar, criar, editar e excluir usuários
-- Como `admin`, devo ser capaz de alternar a `role` do usuário
-- Como `admin`, devo ser capaz de importar uma planilha para o sistema, a fim de criar novos usuários
+A Aplicação compõe-se por uma página inicial, onde será feito o cadastro e login dos usuários e por duas páginas com o usuário autenticado: perfil do usuário logado e dashboard para o administrador do sistema.
 
-### Casos de uso do Student
-- Como `student`, devo ser redirecionado para o meu perfil após o login
-- Como `student`, devo poder apenas ver minhas informações, editar e deletar meu perfil
+## A Aplicação
 
-## O que vamos usar?
+### Login com Devise
+- Utilizar o framework `Devise` para realizar o login.
+
+### Cadastro de usuário
+- O sistema deverá iniciar ao menos com um usuário com a `role` de `admin`.
+- Todo usuário cadastrado, deverá ter a `role` como `student`.
+- Somente o admin poderá alterar a `role` de novos usuários.
+
+### Criação da tela de dashboard
+- Somente será exibido para um usuário autenticado.
+- Somente será exibido para usuários com a `role`: `admin`.
+
+### Casos de uso - *Roles*
+
+#### *Role Admin*
+- Devo ser capaz de acessar Dashboard.
+- Devo ser capaz de ver no Dashboard:
+   - Número total de usuários.
+   - Número total de usuários agrupados por `role`.
+- Devo ser redirecionado para o Dashboard após o login.
+- Devo ser capaz de listar, criar, editar e excluir usuários.
+- Devo ser capaz de importar uma planilha para o sistema, a fim de criar novos usuários.
+
+#### *Role Student*
+- Devo ser redirecionado para o meu perfil após o login.
+- Devo poder apenas ver minhas informações, editar e deletar meu perfil.
+
+## Requisitos
+
 - Ruby on Rails
-   - Linguagem para desenvolvimento do frontend com `.erb` e o backend
+   - Linguagem para desenvolvimento do frontend com `.erb` e o backend.
 
 - Postgres
-   - Banco de dados para armazenamento dos dados da aplicaço
+   - Banco de dados para armazenamento dos dados da aplicaço.
 
 - Docker
-   - Para subir a aplicação localmente
+   - Para subir a aplicação localmente.
 
 - Javascript
-   - Validação da planilha no frontend com uma função javascript pura
-   - Validação do formulário de cadastro de usuário
+   - Validação da planilha no frontend com uma função javascript pura.
+   - Validação do formulário de cadastro de usuário.
 
 - Bootstrap
-  - Para deixar responsivo
+  - Para deixar responsivo.
 
 - Devise:
-   - Autenticação de usuários
-   - sign_up, sign_in, sign_out
+   - Autenticação de usuários.
+   - sign_up, sign_in, sign_out.
 
 - Sidekiq
-   - Utilização de jobs para o processamento de arquivos
+   - Utilização de jobs para o processamento de arquivos.
 
 - Cancancan
-   - Autorização de usuários
+   - Autorização de usuários.
 
 - RSpec
-   - Testes automatizados
+   - Testes automatizados.
 
-## Cereja do bolo
-
-- CI/CD com GitHub Actions
-- Deploy no Heroku
-
-## Live Preview
-Acessa a [aplicação](https://quero-app.herokuapp.com/) de modelo para ter acesso aos seguintes items:
-
-- Mockup das telas a serem desenvolvidas
-- Usabilidade da aplicação
-- fluxo de vida da aplicação
+A partir de agora é mão na massa, [clique aqui](1-development.md) e veja os passos iniciais.
