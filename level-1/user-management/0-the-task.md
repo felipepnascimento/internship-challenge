@@ -69,4 +69,6 @@ A Aplicação compõe-se por uma página inicial, onde será feito o cadastro e 
 - RSpec
    - Testes automatizados.
 
+- Versionamento do projeto no Github
+
 A partir de agora é mão na massa, [clique aqui](1-development.md) e veja os passos iniciais.
