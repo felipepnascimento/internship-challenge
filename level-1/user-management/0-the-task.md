@@ -1,5 +1,5 @@
 # A Tarefa - Sistema de Gerencimento de Usuários
-O objetivo desta tarefa é criar um sitema para gerencimento de usuários. Devemos ter dois perfis de acesso `admin` e `student` com regras e funcionalidades diferentes dentro da aplicação. O cadastro de cada usuário deverá ter os seguintes atributos:
+O objetivo desta tarefa é criar um sitema para gerencimento de usuários. Devemos ter dois perfis de acesso: `admin` e `student` com regras e funcionalidades diferentes dentro da aplicação. O cadastro de cada usuário deverá ter os seguintes atributos:
 
 | Nome      | Tipo    | Descrição
 |-----------|---------|-----------
@@ -12,7 +12,7 @@ A Aplicação compõe-se por uma página inicial, onde será feito o cadastro e 
 ## A Aplicação
 
 ### Login com Devise
-- Utilizar o framework `Devise` para realizar o login.
+- Utilizar a biblioteca `Devise` para realizar o login.
 
 ### Cadastro de usuário
 - O sistema deverá iniciar ao menos com um usuário com a `role` de `admin`.

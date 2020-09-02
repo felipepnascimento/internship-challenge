@@ -1,1 +1,2 @@
 # Internship Challenge Level 1
+O Objetivo deste desafio é introduzir o conhecimento de desenvolvimento de aplicações web utilizando ruby on rails e alguns conceitos básicos de suas principais bibliotecas.
