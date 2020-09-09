@@ -13,13 +13,13 @@ Acessa a [aplicação](https://quero-app.herokuapp.com/) de modelo para ter aces
 
 > email: student@email.com
 
-> senha: 1213123
+> senha: 123123
 
 - Admin
 
 > email: admin@email.com
 
-> senha: 1213123
+> senha: 123123
 
 ## Sugestão de Setup
 - Utilizar Docker com a imagem do ruby na `version 2.6.6`.
