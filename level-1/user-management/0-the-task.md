@@ -53,8 +53,9 @@ A Aplicação compõe-se por uma página inicial, onde será feito o cadastro e 
    - Validação da planilha no frontend com uma função javascript pura.
    - Validação do formulário de cadastro de usuário.
 
-- Bootstrap
+- Bootstrap (não obrigatório)
   - Para deixar responsivo.
+  > Pode utilizar outro lib para deixar responsivo 
 
 - Devise:
    - Autenticação de usuários.
