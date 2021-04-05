@@ -41,7 +41,8 @@ A Aplicação compõe-se por uma página inicial, onde será feito o cadastro e 
 ## Requisitos
 
 - Ruby on Rails
-   - Linguagem para desenvolvimento do frontend com `.erb` e o backend.
+   - Linguagem para desenvolvimento do frontend com `.erb`. (pode utilizar o vue/react/etc para fazer o frontend)
+   - Linguagem para desenvolvimento do backend.
 
 - Postgres
    - Banco de dados para armazenamento dos dados da aplicaço.
